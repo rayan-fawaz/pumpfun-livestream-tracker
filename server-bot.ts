@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 // TODO: move this into an .env file
-const BOT_TOKEN = '';
-const CHAT_ID = '';
+const BOT_TOKEN = ''; // enter bot token address here
+const CHAT_ID = ''; // enter chat id here
 
 export const sendTelegramMessage = async (message: string): Promise<void> => {
   const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
